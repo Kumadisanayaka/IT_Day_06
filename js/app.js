@@ -76,5 +76,15 @@ console.log(document);
 
 let heading = document.getElementById("heading");
 
-heading.innerHTML="Hello, Pathum!";
+heading.innerText="Hello, Pathum!";
 console.log(heading);
+let number = 0;
+function changeIncrement() {
+    heading.innerText="pathum"+number;
+    number++;
+}
+
+function changeDecrement() {
+    heading.innerText="pathum"+number;
+    number--;
+}
