@@ -65,7 +65,7 @@ console.log("Father Name:", customer2.father.name); // nested object property ac
 console.log("second item:", customer2.items[1]); // nested object property access using dot notation
 console.log("second item name:", customer2.items[1].name); // nested object property access using dot notation
 console.log("second item price:", customer2.items[1].price); // nested object property access using dot notation
-console.log("second item variant price:", customer2.items[0].variants[1].price); // nested object property access using dot notation*/
+console.log("second item variant price:", customer2.items[0].variants[1].price); // nested object property access using dot notation
 
 //------DOM Manipulation (Document Object Model) using JavaScript----//
 
@@ -87,4 +87,10 @@ function changeIncrement() {
 function changeDecrement() {
     heading.innerText="pathum"+(--number);
     
+}*/
+
+function changeTitle() {
+    let input = document.getElementById("inputText");
+    let heading = document.getElementById("heading");
+    heading.innerText = input.value;
 }
