@@ -87,10 +87,25 @@ function changeIncrement() {
 function changeDecrement() {
     heading.innerText="pathum"+(--number);
     
-}*/
+}
 
 function changeTitle() {
     let input = document.getElementById("inputText");
     let heading = document.getElementById("heading");
     heading.innerText = input.value;
+}
+*/
+
+function add() {
+    let firstNumber = document.getElementById("firstNumber");
+    let secondNumber = document.getElementById("secondNumber");
+    let result = parseFloat(firstNumber.value) + parseFloat(secondNumber.value);
+    document.getElementById("result").innerText = "Result: " + result;
+}
+
+function subtract() {
+    let firstNumber = document.getElementById("firstNumber");
+    let secondNumber = document.getElementById("secondNumber");
+    let result = parseFloat(firstNumber.value) - parseFloat(secondNumber.value);
+    document.getElementById("result").innerText = "Result: " + result;
 }
