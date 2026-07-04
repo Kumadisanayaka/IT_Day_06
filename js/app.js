@@ -80,11 +80,11 @@ heading.innerText="Hello, Pathum!";
 console.log(heading);
 let number = 0;
 function changeIncrement() {
-    heading.innerText="pathum"+number;
-    number++;
+    heading.innerText="pathum"+(++number);
+    
 }
 
 function changeDecrement() {
-    heading.innerText="pathum"+number;
-    number--;
+    heading.innerText="pathum"+(--number);
+    
 }
