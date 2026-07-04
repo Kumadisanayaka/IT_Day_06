@@ -95,7 +95,7 @@ function changeTitle() {
     heading.innerText = input.value;
 }
     
-*/
+
 
 function add() {
     let firstNumber = document.getElementById("firstNumber");
@@ -109,4 +109,31 @@ function subtract() {
     let secondNumber = document.getElementById("secondNumber");
     let result = parseFloat(firstNumber.value) - parseFloat(secondNumber.value);
     document.getElementById("result").innerText = "Result: " + result;
+}
+*/
+
+let customerList = []
+
+function addCustomerOnAction() {
+    let name = document.getElementById("txtcustomerName").value;
+    let address = document.getElementById("txtAddress").value;
+    let age = document.getElementById("txtAge").value;
+    let email = document.getElementById("txtEmail").value;
+    let salary = document.getElementById("txtSalary").value;
+
+    let customer = {
+        name: name,
+        address: address,
+        age: age,
+        email: email,
+        salary: salary
+    };
+
+    customerList.push(customer);
+    document.getElementById("txtcustomerName").value = "";
+    document.getElementById("txtAddress").value = "";
+    document.getElementById("txtAge").value = "";
+    document.getElementById("txtEmail").value = "";
+    document.getElementById("txtSalary").value = "";
+    console.log(customerList);
 }
