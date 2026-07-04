@@ -1,4 +1,4 @@
-console.log("Hello, JavaScript!");
+/*console.log("Hello, JavaScript!");
 //------Object creation using class syntax----//
 class Customer {
     name;
@@ -65,4 +65,16 @@ console.log("Father Name:", customer2.father.name); // nested object property ac
 console.log("second item:", customer2.items[1]); // nested object property access using dot notation
 console.log("second item name:", customer2.items[1].name); // nested object property access using dot notation
 console.log("second item price:", customer2.items[1].price); // nested object property access using dot notation
-console.log("second item variant price:", customer2.items[0].variants[1].price); // nested object property access using dot notation
+console.log("second item variant price:", customer2.items[0].variants[1].price); // nested object property access using dot notation*/
+
+//------DOM Manipulation (Document Object Model) using JavaScript----//
+
+
+console.log(document);
+
+//document.write("<h1>Hello, JavaScript!</h1>");
+
+let heading = document.getElementById("heading");
+
+heading.innerHTML="Hello, Pathum!";
+console.log(heading);
