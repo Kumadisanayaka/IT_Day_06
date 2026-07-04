@@ -17,11 +17,12 @@
         }
         .container {
             width: 100%;
-            max-width: 420px;
-            background: #ffffff;
-            border-radius: 24px;
-            padding: 32px;
-            box-shadow: 0 24px 60px rgba(26, 38, 87, 0.16);
+            max-width: 480px;
+            background: rgba(255, 255, 255, 0.98);
+            border-radius: 28px;
+            padding: 36px 32px;
+            box-shadow: 0 28px 80px rgba(26, 38, 87, 0.14);
+            border: 1px solid rgba(79, 91, 213, 0.12);
         }
         h1 {
             margin: 0 0 24px;
@@ -38,25 +39,18 @@
             font-size: 1rem;
             box-sizing: border-box;
             outline: none;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+            background: #fbfbff;
         }
         input[type="text"]:focus {
             border-color: #5d75f2;
             box-shadow: 0 0 0 4px rgba(93, 117, 242, 0.12);
         }
-        .result-box {
-            background: #f4f7ff;
-            padding: 18px 16px;
-            border-radius: 16px;
-            text-align: center;
-            margin-bottom: 20px;
-            font-weight: 600;
-        }
-        .button-row {
-            display: flex;
-            gap: 12px;
+        input[type="text"]::placeholder {
+            color: #8c9ad6;
         }
         input[type="button"] {
-            flex: 1;
+            width: 100%;
             padding: 14px 0;
             border: none;
             border-radius: 14px;
@@ -64,11 +58,11 @@
             font-weight: 700;
             cursor: pointer;
             color: #ffffff;
-            background: #4f5bd5;
-            transition: background 0.2s ease;
+            background: linear-gradient(135deg, #4f5bd5 0%, #6d7ff9 100%);
+            transition: background 0.2s ease, transform 0.1s ease;
         }
         input[type="button"]:hover {
-            background: #3d4ac3;
+            background: linear-gradient(135deg, #3d4ac3 0%, #5b6fed 100%);
         }
         input[type="button"]:active {
             transform: translateY(1px);
@@ -82,7 +76,7 @@
     <input type="button" value="change title" onclick="changeTitle()">
     
     <button type="button" value="change title" onclick="changeIncrement()">+</button>
-    <button type="button" value="change title" onclick="changeDecrement()">-</button>-->
+    <button type="button" value="change title" onclick="changeDecrement()">-</button>
 
     <div class="container">
         <h1>Calculator</h1>
@@ -93,7 +87,19 @@
             <input type="button" value="Add" onclick="add()">
             <input type="button" value="Subtract" onclick="subtract()">
         </div>
+    </div>-->
+
+    <div class="container">
+        <h1>Customer Manager</h1>
+        <input type="text" placeholder="Enter customer name" id="txtcustomerName">
+        <input type="text" placeholder="Enter Address" id="txtAddress">
+        <input type="text" placeholder="Enter Age" id="txtAge">
+        <input type="text" placeholder="Enter Email" id="txtEmail">
+        <input type="text" placeholder="Enter salary" id="txtSalary">
+        <input type="button" value="Add Customer" onclick="addCustomerOnAction()">
     </div>
+
+
 
     <script src="/js/app.js"></script>
 
